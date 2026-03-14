@@ -15,8 +15,18 @@
     />
     <meta name="author" content="Clemark Cadapan" />
 
+    <!-- IMPORTING FONTS FROM GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Syncopate:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINKING CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- LOGO -->
     <header class="navbar">
@@ -57,7 +67,7 @@
 
         <!-- NAVIGATION -->
         <ul class="nav_links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -72,138 +82,163 @@
     </div>
 
     <!-- MAIN -->
-    <main class="main-content">
+    <main>
       <!-- HERO -->
-      <section id="hero">
-        <div class="image-wrapper">
-          <div class="image">
-            <img src="" />
-          </div>
-        </div>
-        <header>
-          <h1>Clemark Cadapan</h1>
-        </header>
+      <section class="resume" id="resume">
+        <div class="introduction">
+          <header>
+            <h1>Clemark Cadapan</h1>
+          </header>
 
-        <!-- CONTACT INFO -->
-        <address>
-          <p>
-            Email:
-            <a href="mailto:clemarkcadapan@gmail.com"
-              >clemarkcadapan@gmail.com</a
-            >
+          <!-- ABOUT -->
+          <p class="about">
+            Graphic Designer with over 5 years of experience in branding, logo
+            design, digital illustration, and multimedia work. I have produced a
+            wide range of logos and visual assets for startup clients.
           </p>
 
-          <p>Phone: <a href="tel:+639269797109">+63 926 979 7109</a></p>
+          <p class="about">
+            I also have experience in UI/UX, game development, and front-end
+            development. I focus on creating designs that are clear, practical,
+            and aligned with the client’s goals.
+          </p>
 
-          <p>Location: Philippines</p>
-        </address>
-      </section>
-
-      <!-- ABOUT -->
-      <section class="about" id="about">
-        <header>
-          <h2>About</h2>
-        </header>
-
-        <p>
-          Graphic Designer with over 5 years of experience in branding, logo
-          design, digital illustration, and multimedia work. I have produced a
-          wide range of logos and visual assets for startup clients.
-        </p>
-
-        <p>
-          I also have experience in UI/UX, game development, and front-end
-          development. I focus on creating designs that are clear, practical,
-          and aligned with the client’s goals.
-        </p>
+          <!-- SOCIAL MEDIA -->
+          <ul class="socials">
+            <li><a href="behance.net">BEHANCE</a></li>
+            <li><a href="behance.net">LINKEDIN</a></li>
+            <li><a href="behance.net">INSTAGRAM</a></li>
+          </ul>
+        </div>
       </section>
 
       <!-- EXPERIENCE -->
-      <section class="experience">
-        <header>
-          <h2>Experience</h2>
-        </header>
+      <section>
+        <div class="topics">
+          <header>
+            <p class="eyebrow">Where I've made an impact</p>
+            <h2>Experience</h2>
+          </header>
+          <div class="experience">
+            <article class="experience-card">
+              <p class="date">September 2025 - December 2025</p>
+              <h3>Multimedia Designer</h3>
+              <p class="company">Otomait (Otomait.com)</p>
+              <ul class="task">
+                <li>Designed logos for startup businesses worldwide</li>
+                <li>
+                  Produced scalable vector logo designs using Adobe Illustrator
+                </li>
+                <li>
+                  Researched and applied design trends to maintain competitive
+                  branding
+                </li>
+                <li>Delivered fast revisions while maintaining quality</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <p class="date">November 2022 - June 2024</p>
+              <h3>In-House Logo Designer</h3>
+              <p class="company">DesignCrowd (Design.com)</p>
+              <ul class="task">
+                <li>Designed logos for startup businesses worldwide</li>
+                <li>
+                  Produced scalable vector logo designs using Adobe Illustrator
+                </li>
+                <li>
+                  Researched and applied design trends to maintain competitive
+                  branding
+                </li>
+                <li>Delivered fast revisions while maintaining quality</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <p class="date">April 2019 – October 2022</p>
+              <h3>Graphic Artist</h3>
+              <p class="company">APR eCommerce Limited (CrownAndPaw.com)</p>
+              <ul class="task">
+                <li>Created stylized digital artworks from client photos</li>
+                <li>
+                  Collaborated with clients to refine artworks based on feedback
+                </li>
+                <li>
+                  Maintained high production output with attention to detail
+                </li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <p class="date">August 2019 – October 2019</p>
+              <h3>Software Engineer</h3>
+              <p class="company">Miller Development Solutions</p>
+              <ul class="task">
+                <li>Developed OOP-based solutions for business requirements</li>
+                <li>Maintained clean and maintainable code</li>
+              </ul>
+            </article>
+          </div>
+        </div>
 
-        <article>
-          <h3>In-House Logo Designer — DesignCrowd (Design.com)</h3>
-          <p>November 2022 – June 2024</p>
+        <!-- SKILLS -->
+        <div class="topics">
+          <header>
+            <p class="eyebrow">What I bring to the table</p>
+            <h2>Core Skills</h2>
 
-          <ul>
-            <li>Designed logos for startup businesses worldwide</li>
-            <li>
-              Produced scalable vector logo designs using Adobe Illustrator
-            </li>
-            <li>
-              Researched and applied design trends to maintain competitive
-              branding
-            </li>
-            <li>Delivered fast revisions while maintaining quality</li>
+            <p class="details">
+              I bring a combination of creative thinking, technical design
+              skills, and practical experience from working with a wide range of
+              projects. These skills allow me to create clear, effective designs
+              while adapting to different styles, tools, and project
+              requirements.
+            </p>
+          </header>
+          <ul class="skills-list">
+            <li>Branding & Logo Design</li>
+            <li>UI/UX Design</li>
+            <li>Front-end Development</li>
+            <li>Illustration</li>
+            <li>Multimedia</li>
+            <li>Motion Graphics</li>
+            <li>Game Development</li>
+            <li>Web Development</li>
+            <li>C# Programming</li>
+            <li>Production Design</li>
           </ul>
-        </article>
+        </div>
 
-        <article>
-          <h3>Graphic Artist — APR eCommerce Limited</h3>
-          <p>April 2019 – October 2022</p>
-
-          <ul>
-            <li>Created stylized digital artworks from client photos</li>
-            <li>
-              Collaborated with clients to refine artworks based on feedback
-            </li>
-            <li>Maintained high production output with attention to detail</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Software Engineer — Miller Development Solutions</h3>
-          <p>August 2019 – October 2019</p>
-
-          <ul>
-            <li>Developed OOP-based solutions for business requirements</li>
-            <li>Maintained clean and maintainable code</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- SKILLS -->
-      <section class="skills">
-        <header>
-          <h2>Core Skills</h2>
-        </header>
-
-        <ul class="skills-list">
-          <li>Branding & Logo Design</li>
-          <li>UI/UX Design</li>
-          <li>Illustration</li>
-          <li>Multimedia</li>
-          <li>Motion Graphics</li>
-          <li>Game Development (Godot)</li>
-          <li>Web Development</li>
-          <li>C# Programming</li>
-        </ul>
+        <div class="topics">
+          <header>
+            <p class="eyebrow">Where I've gained my knowledge</p>
+            <h2>Education</h2>
+          </header>
+          <div class="experience-card">
+            <p class="date">Academic Year 2013 - 2018</p>
+            <h3>Bachelor of Science in Computer Engineering</h3>
+            <p class="company">Asian College Dumaguete</p>
+          </div>
+        </div>
       </section>
 
       <!-- PORTFOLIO -->
       <section class="portfolio" id="portfolio">
-        <header>
-          <h2>Portfolio</h2>
-          <p>Selected design work and projects.</p>
-        </header>
-
-        <article>
-          <h3>Brand Identity Projects</h3>
-          <p>Logo and branding projects created for startup clients.</p>
-        </article>
-
-        <article>
-          <h3>Digital Illustration</h3>
-          <p>Stylized artworks and commissioned illustrations.</p>
-        </article>
-
-        <article>
-          <h3>UI/UX & Web Projects</h3>
-          <p>Interface designs and front-end experiments.</p>
-        </article>
+        <div>
+          <header>
+            <p class="eyebrow">What I've delivered</p>
+            <h2>Portfolio</h2>
+          </header>
+          <article>
+            <h3>Brand Identity Projects</h3>
+            <p>Logo and branding projects created for startup clients.</p>
+          </article>
+          <article>
+            <h3>Digital Illustration</h3>
+            <p>Stylized artworks and commissioned illustrations.</p>
+          </article>
+          <article>
+            <h3>UI/UX & Web Projects</h3>
+            <p>Interface designs and front-end experiments.</p>
+          </article>
+        </div>
       </section>
 
       <!-- CONTACT -->

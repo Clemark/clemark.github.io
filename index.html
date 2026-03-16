@@ -15,7 +15,7 @@
     />
     <meta name="author" content="Clemark Cadapan" />
 
-    <!-- IMPORTING FONTS FROM GOOGLE FONT -->
+    <!-- INFO: IMPORTING FONTS FROM GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,12 +23,12 @@
       rel="stylesheet"
     />
 
-    <!-- LINKING CSS -->
+    <!-- INFO: LINKING CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- LOGO -->
+    <!-- INFO: LOGO -->
     <header class="navbar">
       <nav>
         <a href="#" class="logo">
@@ -65,9 +65,39 @@
           </svg>
         </a>
 
-        <!-- NAVIGATION -->
+        <!-- INFO: NAVIGATION -->
+
+        <input type="checkbox" name="" id="sidebar-active" />
+        <label for="sidebar-active" class="overlay"></label>
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#d68306"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
         <ul class="nav_links">
-          <li><a href="#resume">Resume</a></li>
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#d68306"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+          <li><a href="#resume">Résumé</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -81,16 +111,16 @@
       <img class="parallax__01" src="images/01_Tablet.svg" />
     </div>
 
-    <!-- MAIN -->
+    <!-- INFO: MAIN -->
     <main>
-      <!-- HERO -->
+      <!-- INFO: HERO -->
       <section class="resume" id="resume">
         <div class="introduction">
           <header>
             <h1>Clemark Cadapan</h1>
           </header>
 
-          <!-- ABOUT -->
+          <!-- INFO: ABOUT -->
           <p class="about">
             Graphic Designer with over 5 years of experience in branding, logo
             design, digital illustration, and multimedia work. I have produced a
@@ -103,7 +133,7 @@
             and aligned with the client’s goals.
           </p>
 
-          <!-- SOCIAL MEDIA -->
+          <!-- INFO: SOCIAL MEDIA -->
           <ul class="socials">
             <li><a href="behance.net">BEHANCE</a></li>
             <li><a href="behance.net">LINKEDIN</a></li>
@@ -112,7 +142,7 @@
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
+      <!-- INFO: EXPERIENCE -->
       <section>
         <div class="topics">
           <header>
@@ -125,15 +155,18 @@
               <h3>Multimedia Designer</h3>
               <p class="company">Otomait (Otomait.com)</p>
               <ul class="task">
-                <li>Designed logos for startup businesses worldwide</li>
                 <li>
-                  Produced scalable vector logo designs using Adobe Illustrator
+                  Created multimedia assets such as social media graphics,
+                  posters, and web visuals.
                 </li>
                 <li>
-                  Researched and applied design trends to maintain competitive
-                  branding
+                  Designed UI/UX mockups and presentations for product and
+                  marketing needs.
                 </li>
-                <li>Delivered fast revisions while maintaining quality</li>
+                <li>
+                  Developed bespoke product and merchandise designs for branded
+                  products.
+                </li>
               </ul>
             </div>
             <article class="experience-card">
@@ -179,7 +212,7 @@
         </div>
       </section>
 
-      <!-- SKILLS -->
+      <!-- INFO: SKILLS -->
       <section>
         <div class="topics">
           <header>
@@ -228,7 +261,7 @@
         </div>
       </section>
 
-      <!-- PORTFOLIO -->
+      <!-- INFO: PORTFOLIO -->
       <section class="portfolio" id="portfolio">
         <div class="topics">
           <div>
@@ -245,7 +278,7 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
+      <!-- INFO: CONTACT -->
       <section class="contact" id="contact">
         <div class="topics">
           <header>
@@ -255,30 +288,35 @@
           <div class="contact-info">
             <ul class="contact-address">
               <li>
+                <img src="images/Email.svg" />
                 <p class="contact-label">
                   <span class="contact-title">Email:</span>
                   <a
                     class="contact-details"
-                    href="mailto:clemarkcadapan@gmail.com"
+                    href="clemarkcadapan@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
+                    id="email-details"
                     >clemarkcadapan@gmail.com</a
                   >
                 </p>
               </li>
               <li>
+                <img src="images/Mobile.svg" />
                 <p class="contact-label">
                   <span class="contact-title">Phone:</span>
                   <a
                     class="contact-details"
-                    href="tel:+639269797109"
+                    href="+639269797109"
                     target="_blank"
                     rel="noopener noreferrer"
+                    id="phone-details"
                     >+63 926 979 7109</a
                   >
                 </p>
               </li>
               <li>
+                <img src="images/Location.svg" />
                 <p class="contact-label">
                   <span class="contact-title">Location:</span>
                   <a
@@ -286,8 +324,8 @@
                     href="https://maps.app.goo.gl/8y9MTUTj7C4v6njL6"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Negros Oriental, Philippines</a
-                  >
+                    >Negros Oriental, Philippines
+                  </a>
                 </p>
               </li>
             </ul>
@@ -296,9 +334,11 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- INFO: FOOTER -->
     <footer>
       <p>© 2026 Clemark Cadapan. All rights reserved.</p>
     </footer>
+
+    
   </body>
 </html>

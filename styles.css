@@ -131,17 +131,17 @@ footer {
 
 .parallax__02 {
   z-index: 3;
-  --parallax-speed: 10;
+  --parallax-speed: 20;
 }
 
 .parallax__03 {
   z-index: 2;
-  --parallax-speed: 20;
+  --parallax-speed: 50;
 }
 
 .parallax__04 {
   z-index: 1;
-  --parallax-speed: 30;
+  --parallax-speed: 60;
 }
 
 @keyframes parallax {
@@ -158,12 +158,21 @@ footer {
   top: 0;
 
   padding-block: 0.5rem;
-  z-index: 2;
+  z-index: 5;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav_links {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: 0.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -178,8 +187,60 @@ footer {
 }
 
 .nav_links li:hover {
-  background-image: linear-gradient(transparent, var(--card-background));
+  background-color: var(--yellow);
   color: var(--text-color);
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  padding: 0 20px;
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .nav_links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    gap: 1em;
+    z-index: 10;
+    width: 200px;
+    padding: 10px 1em 2em 1em;
+
+    background-color: var(--text-color);
+    transition: 0.5s ease-in-out;
+  }
+
+  #sidebar-active:checked ~ .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  .nav_links li {
+    width: 100%;
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 20px;
+    display: block;
+  }
+
+  #sidebar-active:checked ~ .nav_links {
+    right: 0;
+  }
 }
 
 .resume {
@@ -361,6 +422,15 @@ footer {
   gap: 1rem;
 }
 
+.contact-address li {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-address li img {
+  height: 3rem;
+}
+
 .contact-label {
   display: flex;
   flex-direction: column;
@@ -374,6 +444,24 @@ footer {
 }
 
 .contact-details {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
+}
+
+#email-details::after {
+  content: "\2713  Email copied";
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  display: none;
+}
+
+#phone-details::after {
+  content: "\2713  Phone Number copied";
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  display: none;
 }

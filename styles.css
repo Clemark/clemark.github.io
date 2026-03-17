@@ -97,6 +97,8 @@ footer {
   align-items: center;
   padding-block: 5dvh;
   background-color: var(--yellow);
+  font-style: italic;
+  font-weight: var(--text-bold);
 }
 .parallax {
   display: grid;
@@ -406,13 +408,16 @@ footer {
 }
 
 .contact-info {
-  width: clamp(16rem, 60dvw, 32rem);
   display: flex;
   flex-direction: column;
 
-  border-radius: 20px;
-  background-color: var(--card-background);
-  padding: 2rem 3rem;
+  border-left: 4px solid var(--yellow);
+  background-image: linear-gradient(
+    to right,
+    var(--card-background),
+    transparent
+  );
+  padding: 2rem clamp(1rem, 5dvw, 3rem);
 }
 
 .contact-address {
@@ -420,15 +425,25 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: min(90%, 75rem);
 }
 
 .contact-address li {
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: start;
+  gap: 1rem;
+}
+
+@media (min-width: 350px) {
+  .contact-address li {
+    grid-auto-flow: column;
+    gap: clamp(1rem, 20%, 2rem);
+  }
 }
 
 .contact-address li img {
-  height: 3rem;
+  width: 2rem;
 }
 
 .contact-label {

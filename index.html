@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Clemark Cadapan | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <meta
       name="description"
       content="Portfolio of Clemark Cadapan, Graphic Designer specializing in branding, logo design, digital illustration, and multimedia work."
@@ -16,7 +14,7 @@
     />
     <meta name="author" content="Clemark Cadapan" />
 
-    <!-- INFO: IMPORTING FONTS FROM GOOGLE FONT -->
+    <!-- INFO: Linking Google Fonts Synocate and Sofia Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,320 +22,428 @@
       rel="stylesheet"
     />
 
-    <!-- INFO: LINKING CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
-
-  <body>
-    <!-- INFO: LOGO -->
-    <header class="navbar">
-      <nav>
-        <a href="#" class="logo">
-          <svg
-            id="Layer_2"
-            width="150"
-            data-name="Layer 2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1253.09 314.65"
-          >
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #fff;
-                }
-
-                .cls-2 {
-                  fill: #d88a23;
-                }
-              </style>
-            </defs>
-            <g id="Layer_3" data-name="Layer 3">
-              <g id="Logo">
-                <path
-                  class="cls-2"
-                  d="M868.12,122.91c-9.15,0-17.55,2.1-25.2,6.3-7.66,4.2-15.59,10.6-23.8,19.18-2.43-8.4-6.54-14.74-12.32-19.04-5.79-4.29-13.44-6.44-22.96-6.44-8.96,0-17.13,2.01-24.5,6.02-7.38,4.02-15.08,10.04-23.1,18.06-.19-3.36-.56-6.62-1.12-9.8-.56-3.17-1.03-6.06-1.4-8.68-.14-1.1-.74-1.8-1.79-2.08l-30.79-.35c-1.53,0-2.77,1.24-2.77,2.77v10.46c0,1.53,1.24,2.77,2.77,2.77h5.12c1.58,0,2.88,1.24,2.96,2.81h0c.28,5.51.42,10.88.42,16.1v99.4c0,1.7,1.38,3.08,3.08,3.08h21.84c1.7,0,3.08-1.38,3.08-3.08v-88.84c0-1.76.73-3.44,2.01-4.65,6.66-6.3,12.66-11.03,18.01-14.17,5.88-3.45,11.71-5.18,17.5-5.18,6.53,0,11.29,2.06,14.28,6.16,2.98,4.11,4.48,10.36,4.48,18.76v87.92c0,1.7,1.38,3.08,3.08,3.08h22.12c1.86,0,2.8-1.02,2.8-3.08v-88.8c0-1.78.75-3.49,2.06-4.7,6.81-6.3,12.89-11.02,18.24-14.16,5.88-3.45,11.62-5.18,17.22-5.18,6.53,0,11.34,2.06,14.42,6.16,3.08,4.11,4.62,10.36,4.62,18.76v87.92c0,1.7,1.38,3.08,3.08,3.08h21.84c1.7,0,3.08-1.38,3.08-3.08v-91.28c0-15.3-3.22-26.83-9.66-34.58-6.44-7.74-16.01-11.62-28.7-11.62ZM1025.08,263.47h-19.32c-1.12,0-1.91-.37-2.38-1.12-.47-.74-.89-1.68-1.26-2.8-.19-1.68-.61-4.85-1.26-9.52-.4-2.87-.71-5.63-.94-8.28-.12-1.54-2.04-2.14-3.05-.98-3.68,4.21-7.2,7.89-10.57,11.02-5.51,5.13-11.01,8.92-16.52,11.36-5.51,2.45-11.34,3.68-17.5,3.68-11.02,0-19.42-3.96-25.2-11.86-5.79-7.91-8.68-19.33-8.68-34.26,0-11.58,1.86-21.05,5.6-28.41,3.73-7.35,9.84-13.03,18.34-17.04,8.49-4.01,19.83-6.69,34.02-8.02l14.62-1.49c4.09-.41,6.78-4.55,5.4-8.42-.84-2.33-1.95-4.24-3.36-5.72-3.45-3.64-9.48-5.46-18.06-5.46-15.68,0-23.43,5.51-23.24,16.52,0,2.05-.93,3.08-2.8,3.08h-21.56c-2.06,0-3.18-1.68-3.36-5.04-.94-11.57,3.26-20.77,12.6-27.58,9.33-6.81,22.4-10.22,39.2-10.22s29.87,3.87,38.08,11.62,12.32,19.55,12.32,35.42v59.08c0,6.35.19,12.14.56,17.36.37,5.23.84,9.8,1.4,13.72.37,2.24-.65,3.36-3.08,3.36ZM998.2,188.17c0-1.84-1.59-3.27-3.41-3.07l-17.59,1.86c-11.76,1.12-19.93,3.68-24.5,7.69-4.58,4.01-6.86,13.69-6.86,23.05,0,7.14,1.21,14.48,3.64,18.04,2.42,3.57,6.16,5.35,11.2,5.35,5.78,0,11.85-2.34,18.2-7.02,4.12-3.04,9.03-7.72,14.73-14.05,2.95-3.27,4.59-7.52,4.59-11.93v-19.92ZM1101.71,127.41c-5.57,1.77-11.19,4.42-16.85,7.97-4.66,2.92-9.01,6.37-13.07,10.35-.09-1.54-.2-3.17-.35-4.9-.37-4.48-.93-8.4-1.68-11.76-.19-1.87-1.31-2.8-3.36-2.8h-19.88c-2.43,0-3.46,1.12-3.08,3.36.74,5.04,1.26,10.03,1.54,14.98.28,4.95.42,10.13.42,15.54v100.24c0,1.7,1.38,3.08,3.08,3.08h21.84c1.7,0,3.08-1.38,3.08-3.08v-87.48c0-3.26,1.58-6.32,4.25-8.21l1.37-.97c.48-.34.98-.67,1.5-.96,4.43-2.53,8.89-4.39,13.36-5.56,4.74-1.23,9.31-1.5,13.74-.8,1.84.29,3.58.66,5.21,1.1.72.2,4.62,1.42,8.33,2.59,2.58.82,5.21-1.11,5.21-3.82v-24.79c0-1.79-1.18-3.36-2.9-3.85-2.75-.79-5.89-1.69-6.77-1.83-4.42-.7-9.42-.16-14.99,1.6ZM339.62,213.57c-9.46,22.31-29.38,36.16-51.97,36.16h-.01c-2.68,0-5.41-.19-8.17-.58-11.03,19.36-31.02,36.43-57.15,48.64-23.26,10.87-48.83,16.86-72.01,16.86-5.02,0-9.88-.29-14.45-.86-63.94-7.93-89.58-46.67-94.07-54.35l-.04-.07c-1.34-2.18-2.15-4.69-2.31-7.27-.1-.86-.23-2.65-.31-9.73-1.64-.95-3.23-1.97-4.76-3.08-3.4-2.44-6.52-5.26-9.28-8.39-10.77-12.18-15.82-28.4-13.85-44.52l5.16-42.39h26.75c.73-2.82,1.57-5.63,2.51-8.41C20.17,113.91,6.36,79.41,5.74,77.84L0,63.34l36.17-15.07-4-40.94,15.46-1.83C78.66,1.85,109.07,0,138.05,0c82.13,0,127.21,14.5,132.08,16.16l5.37,1.84,2.99,4.79c6.65,10.71,8.43,25.08,8.42,37.44,22.47,4.68,32.3,13.46,34.21,15.36l4.81,4.76-.13,6.8c-.3,18.56-5.05,38.64-9.11,52.53,13.05,6.96,22.29,18.55,26.15,32.89,3.55,13.17,2.4,27.73-3.22,41ZM1252.4,259.83l-48.57-77.71c-1.08-1.73-.86-3.97.54-5.45l44.11-46.77c.93-.93,1.21-1.77.84-2.52-.38-.74-1.22-1.12-2.52-1.12h-28.84c-1.5,0-2.62.56-3.36,1.68l-30.24,33.32c-3.55,3.74-7,7.56-10.36,11.48s-6.63,7.84-9.8,11.76h-.56c.18-6.53.32-13.02.42-19.46.09-6.44.14-12.83.14-19.18v-70.56c0-1.7-1.38-3.08-3.08-3.08l-38.98-.16c-1.53,0-2.77,1.24-2.77,2.77v10.46c0,1.53,1.24,2.77,2.77,2.77h11.09c1.64,0,2.96,1.33,2.96,2.96v169.36c0,1.7,1.38,3.08,3.08,3.08h21.84c1.7,0,3.08-1.38,3.08-3.08v-36.65c0-3.79,1.48-7.44,4.12-10.16l13.8-14.24,38.64,62.16c.93,1.31,2.14,1.96,3.64,1.96h26.04c1.12,0,1.91-.37,2.38-1.12.46-.74.32-1.58-.42-2.52ZM694.36,176.67v21.84c0,2.06-.93,3.08-2.8,3.08h-79.84c-2.45,0-4.44,1.99-4.44,4.44v4.52c0,11.39,2.42,19.7,7.28,24.92,4.85,5.23,12.69,7.84,23.52,7.84,8.21,0,14.56-1.3,19.04-3.92,4.48-2.61,6.72-6.62,6.72-12.04,0-2.05,1.12-3.08,3.36-3.08h21.56c1.68,0,2.71.94,3.08,2.8.75,12.51-3.73,22.26-13.44,29.26-9.71,7-23.43,10.5-41.16,10.5-19.04,0-33.46-4.29-43.26-12.88-9.8-8.58-14.7-21.37-14.7-38.36v-37.24c0-18.11,4.85-31.87,14.56-41.3,9.7-9.43,24.08-14.14,43.12-14.14s33.13,4.57,42.84,13.72c9.71,9.15,14.56,22.49,14.56,40.04ZM666.6,177.54c-.34-10.08-2.76-18.44-7.24-23.27-4.85-5.23-12.23-7.84-22.12-7.84s-17.6,2.71-22.54,8.12c-4.56,4.99-7.01,13.25-7.37,22.98-.05,1.39,1.06,2.54,2.44,2.54h54.39c1.38,0,2.49-1.15,2.44-2.53ZM442.04,155.39c5.22-5.41,13.16-8.12,23.8-8.12,8.4,0,15.07,1.73,20.02,5.18,4.94,3.46,7.42,8.36,7.42,14.7,0,2.99.93,4.48,2.8,4.48h21.56c1.86,0,2.89-2.05,3.08-6.16.18-8.4-1.92-15.77-6.3-22.12-4.39-6.34-10.69-11.34-18.9-14.98-8.22-3.64-18.2-5.46-29.96-5.46-19.04,0-33.7,4.76-43.96,14.28-10.27,9.52-15.4,23.24-15.4,41.16v33.32c0,17.74,5.04,31.36,15.12,40.88,10.08,9.52,24.73,14.28,43.96,14.28,18.1,0,31.87-4.1,41.3-12.32,9.42-8.21,14.04-19.32,13.86-33.32-.19-1.86-1.22-2.8-3.08-2.8h-21.56c-1.87,0-2.8,1.5-2.8,4.48,0,5.6-2.43,10.27-7.28,14-4.86,3.74-11.58,5.6-20.16,5.6-10.46,0-18.3-2.75-23.52-8.26-5.23-5.5-7.84-13.95-7.84-25.34v-28c0-11.57,2.61-20.06,7.84-25.48ZM560.64,72.23l-38.5-.16c-1.53,0-2.77,1.24-2.77,2.77v10.46c0,1.53,1.24,2.77,2.77,2.77h10.62c1.64,0,2.96,1.33,2.96,2.96v169.36c0,1.7,1.38,3.08,3.08,3.08h21.84c1.7,0,3.08-1.38,3.08-3.08V75.31c0-2.05-1.03-3.08-3.08-3.08Z"
-                />
-                <path
-                  class="cls-1"
-                  d="M211.36,187.21l-3.17-25.97h-70.98l-3.18,25.97c-1.35,11.06,2.12,22.2,9.51,30.54,7.39,8.34,18.02,13.12,29.16,13.12s21.76-4.78,29.16-13.12c7.38-8.34,10.85-19.48,9.5-30.54ZM177.9,208.34c-9.6,0-17.38-9.12-17.38-20.38s7.78-20.38,17.38-20.38c3.4,0,6.57,1.14,9.24,3.11l-7.78,11.05,14.47-1.97c.93,2.5,1.46,5.27,1.46,8.19,0,11.26-7.79,20.38-17.39,20.38ZM211.36,187.21l-3.17-25.97h-70.98l-3.18,25.97c-1.35,11.06,2.12,22.2,9.51,30.54,7.39,8.34,18.02,13.12,29.16,13.12s21.76-4.78,29.16-13.12c7.38-8.34,10.85-19.48,9.5-30.54ZM177.9,208.34c-9.6,0-17.38-9.12-17.38-20.38s7.78-20.38,17.38-20.38c3.4,0,6.57,1.14,9.24,3.11l-7.78,11.05,14.47-1.97c.93,2.5,1.46,5.27,1.46,8.19,0,11.26-7.79,20.38-17.39,20.38ZM35.69,165.77l-2.83,23.24c-1.22,9.95,1.89,19.96,8.54,27.46,2.25,2.54,4.83,4.69,7.65,6.46,0-12.59.09-29.17.36-50.71.02-2.16.12-4.32.28-6.45h-14ZM102.37,189.01l-2.83-23.24h-38.06c-.17,2.18-.27,4.38-.3,6.59-.3,24.22-.38,42.2-.35,55.23,2.22.45,4.49.68,6.79.68,10.02,0,19.57-4.3,26.21-11.8,6.65-7.5,9.76-17.51,8.54-27.46ZM87.15,207.46c-1.54.57-3.16.88-4.85.88-4.05,0-7.74-1.77-10.55-4.7-3.25-3.4-5.29-8.35-5.29-13.87,0-10.26,7.09-18.57,15.84-18.57,3.09,0,5.98,1.04,8.41,2.84l-7.09,10.06,13.18-1.79c.85,2.28,1.33,4.81,1.33,7.46,0,8.28-4.62,15.28-10.98,17.69ZM211.36,187.21l-3.17-25.97h-70.98l-3.18,25.97c-1.35,11.06,2.12,22.2,9.51,30.54,7.39,8.34,18.02,13.12,29.16,13.12s21.76-4.78,29.16-13.12c7.38-8.34,10.85-19.48,9.5-30.54ZM177.9,208.34c-9.6,0-17.38-9.12-17.38-20.38s7.78-20.38,17.38-20.38c3.4,0,6.57,1.14,9.24,3.11l-7.78,11.05,14.47-1.97c.93,2.5,1.46,5.27,1.46,8.19,0,11.26-7.79,20.38-17.39,20.38ZM211.36,187.21l-3.17-25.97h-70.98l-3.18,25.97c-1.35,11.06,2.12,22.2,9.51,30.54,7.39,8.34,18.02,13.12,29.16,13.12s21.76-4.78,29.16-13.12c7.38-8.34,10.85-19.48,9.5-30.54ZM177.9,208.34c-9.6,0-17.38-9.12-17.38-20.38s7.78-20.38,17.38-20.38c3.4,0,6.57,1.14,9.24,3.11l-7.78,11.05,14.47-1.97c.93,2.5,1.46,5.27,1.46,8.19,0,11.26-7.79,20.38-17.39,20.38ZM305.07,158.19c-8.2-3.9-15.48-3.89-21.66.03-6.26,3.99-10.97,11.84-12.98,21-1.32,6.03-6.67,10.33-12.84,10.33-.02-2.44.12-4.87.4-7.25-12.69-1.05-22.24-5.94-28.44-14.56-11.27-15.66-7.76-41.49-4.53-54.74-29.94,4.55-49.67-6.16-68.82-16.54-3.32-1.84-6.32-3.45-9.08-4.84-19.1-9.71-43.34-5.75-57.98,9.89-.11.12-.23.24-.34.37-7.03,7.57-12.77,15.55-17.22,23.91-4.13,7.75-6.29,17.57-8.05,26.2-.21,1.03.57,2,1.63,2h44.82l4.09,33.6c1.62,13.29-2.55,26.66-11.42,36.69-8.87,10.02-21.64,15.77-35.03,15.77-2.27,0-4.52-.18-6.74-.5.04,5.01.1,6.6.15,7.56.07,1.32.54,2.59,1.34,3.64,6.4,8.45,28.38,35.5,76.18,41.43,45.26,5.62,112.49-22.6,126.41-63.54l1.95-5.74,5.68,2.12c24.56,9.16,40.65-5.03,46.98-19.95,7-16.51,4.27-37.92-14.5-46.88ZM210.67,225.56c-9.62,10.86-23.46,17.09-37.97,17.09s-28.36-6.23-37.98-17.09c-5.1-5.77-8.76-12.55-10.81-19.8-1.83-6.41-2.39-13.21-1.56-19.97l1.22-10.06,3.21-26.27h91.84l3.17,26.04,1.26,10.29c1.75,14.4-2.76,28.89-12.38,39.77ZM308.34,174.56h0c-13.66,11.77-18.64,23.76-20.38,32.08-1.17,5.58-6.63,9.15-12.2,7.96.7-5.37,1.96-10.12,3.64-14.34.28-.73.59-1.46.91-2.15,6.66-14.83,18.41-22.24,26.94-24.94,1.43-.46,2.77-.78,3.98-.98-1,.79-1.96,1.58-2.89,2.37ZM208.19,161.24h-70.98l-3.18,25.97c-1.35,11.06,2.12,22.2,9.51,30.54,7.39,8.34,18.02,13.12,29.16,13.12s21.76-4.78,29.16-13.12c7.38-8.34,10.85-19.48,9.5-30.54l-3.17-25.97ZM177.9,208.34c-9.6,0-17.38-9.12-17.38-20.38s7.78-20.38,17.38-20.38c3.4,0,6.57,1.14,9.24,3.11l-7.78,11.05,14.47-1.97c.93,2.5,1.46,5.27,1.46,8.19,0,11.26-7.79,20.38-17.39,20.38Z"
-                />
-              </g>
-            </g>
-          </svg>
-        </a>
-
-        <!-- INFO: NAVIGATION -->
-
-        <input type="checkbox" name="" id="sidebar-active" />
-        <label for="sidebar-active" class="overlay"></label>
-        <label for="sidebar-active" class="close-sidebar-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#d68306"
-          >
+  <body class="">
+    <!-- INFO: Navigation Bar -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button id="theme-switch">
+        <svg
+          id="themeSwitcher"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="rays">
             <path
-              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              d="M28.4269 42.5175C29.2305 42.5175 29.7187 43.4022 29.2905 44.0822L25.864 49.5231C25.4635 50.159 24.5364 50.159 24.1359 49.5231L20.7094 44.0822C20.2815 43.4022 20.7705 42.5175 21.574 42.5175H28.4269Z"
             />
-          </svg>
-        </label>
+            <path
+              d="M8.47255 35.459C8.65077 34.6756 9.62258 34.3952 10.1908 34.9634L15.0362 39.81C15.6045 40.3783 15.3243 41.3492 14.5406 41.5272L8.27011 42.9513C7.53743 43.1174 6.88222 42.4624 7.04852 41.7297L8.47255 35.459Z"
+            />
+            <path
+              d="M39.8101 34.9634C40.3783 34.3955 41.3491 34.6758 41.5274 35.459L42.9514 41.7297C43.1178 42.4625 42.4627 43.1177 41.7298 42.9513L35.4593 41.5272C34.6761 41.349 34.3959 40.3782 34.9637 39.81L39.8101 34.9634Z"
+            />
+            <path
+              d="M5.91767 20.7099C6.59768 20.2816 7.4833 20.7699 7.48331 21.5735V28.4265C7.48331 29.2301 6.59765 29.7192 5.91767 29.2911L0.476849 25.8646C-0.159017 25.4641 -0.158882 24.537 0.476849 24.1364L5.91767 20.7099Z"
+            />
+            <path
+              d="M42.5176 21.5735C42.5176 20.7699 43.4032 20.2806 44.0832 20.7089L49.523 24.1364C50.159 24.5369 50.159 25.4631 49.523 25.8636L44.0832 29.2911C43.4032 29.7194 42.5176 29.2302 42.5176 28.4265V21.5735Z"
+            />
+            <path
+              d="M7.04852 8.27035C6.88208 7.53754 7.53731 6.88147 8.27011 7.04774L14.5406 8.47179C15.3242 8.64988 15.6044 9.62181 15.0362 10.19L10.1898 15.0366C9.62142 15.6043 8.65049 15.3235 8.47255 14.54L7.04852 8.27035Z"
+            />
+            <path
+              d="M41.7298 7.04874C42.4626 6.88249 43.1178 7.53755 42.9514 8.27035L41.5274 14.54C41.3494 15.3237 40.3774 15.6049 39.8091 15.0366L34.9637 10.19C34.3955 9.6218 34.6757 8.65086 35.4593 8.47279L41.7298 7.04874Z"
+            />
+            <path
+              d="M24.1359 0.47694C24.5364 -0.15898 25.4635 -0.15898 25.864 0.47694L29.2905 5.91687C29.7187 6.59679 29.2303 7.48229 28.4269 7.48253H21.573C20.7695 7.4824 20.2811 6.59684 20.7094 5.91687L24.1359 0.47694Z"
+            />
+          </g>
+          <path
+            id="side"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0ZM25 8C15.6112 8 8 15.6112 8 25C8 34.3888 15.6112 42 25 42C34.3888 42 42 34.3888 42 25C42 15.6112 34.3888 8 25 8Z"
+          />
+          <circle id="core" cx="25" cy="25" r="14" />
+        </svg>
+      </button>
+    </nav>
 
-        <ul class="nav_links">
-          <label for="sidebar-active" class="close-sidebar-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#d68306"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </label>
-          <li><a href="#resume">Résumé</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="parallax">
-      <img class="parallax__04" src="images/04_Hoodie.svg" />
-      <img class="parallax__03" src="images/03_Head.svg" />
-      <img class="parallax__02" src="images/02_Hands.svg" />
-      <img class="parallax__01" src="images/01_Tablet.svg" />
-    </div>
-
-    <!-- INFO: MAIN -->
     <main>
-      <!-- INFO: HERO -->
-      <section class="resume" id="resume">
-        <div class="introduction">
+      <!-- INFO: Introduction Section-->
+      <section class="introduction">
+        <div class="image-wrapper">
+          <div class="image">
+            <img
+              src="img/clemark.png"
+              alt="Clemark Cadapan, a 28-year-old graphic designer, smiling at the camera. He is wearing a mustard yellow cable-knit sweater against a plain white background. His expression conveys professionalism and approachability."
+            />
+          </div>
+        </div>
+
+        <div class="information">
           <header>
+            <p class="eyebrow">Hi! My name is</p>
             <h1>Clemark Cadapan</h1>
-          </header>
-
-          <!-- INFO: ABOUT -->
-          <p class="about">
-            Graphic Designer with over 5 years of experience in branding, logo
-            design, digital illustration, and multimedia work. I have produced a
-            wide range of logos and visual assets for startup clients.
-          </p>
-
-          <p class="about">
-            I also have experience in UI/UX, game development, and front-end
-            development. I focus on creating designs that are clear, practical,
-            and aligned with the client’s goals.
-          </p>
-
-          <!-- INFO: SOCIAL MEDIA -->
-          <ul class="socials">
-            <li><a href="behance.net">BEHANCE</a></li>
-            <li><a href="behance.net">LINKEDIN</a></li>
-            <li><a href="behance.net">INSTAGRAM</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- INFO: EXPERIENCE -->
-      <section>
-        <div class="topics">
-          <header>
-            <p class="eyebrow">Where I've made an impact</p>
-            <h2>Experience</h2>
-          </header>
-          <div class="experience">
-            <div class="experience-card">
-              <p class="date">September 2025 - December 2025</p>
-              <h3>Multimedia Designer</h3>
-              <p class="company">Otomait (Otomait.com)</p>
-              <ul class="task">
-                <li>
-                  Created multimedia assets such as social media graphics,
-                  posters, and web visuals.
-                </li>
-                <li>
-                  Designed UI/UX mockups and presentations for product and
-                  marketing needs.
-                </li>
-                <li>
-                  Developed bespoke product and merchandise designs for branded
-                  products.
-                </li>
-              </ul>
-            </div>
-            <article class="experience-card">
-              <p class="date">November 2022 - June 2024</p>
-              <h3>In-House Logo Designer</h3>
-              <p class="company">DesignCrowd (Design.com)</p>
-              <ul class="task">
-                <li>Designed logos for startup businesses worldwide</li>
-                <li>
-                  Produced scalable vector logo designs using Adobe Illustrator
-                </li>
-                <li>
-                  Researched and applied design trends to maintain competitive
-                  branding
-                </li>
-                <li>Delivered fast revisions while maintaining quality</li>
-              </ul>
-            </article>
-            <article class="experience-card">
-              <p class="date">April 2019 – October 2022</p>
-              <h3>Graphic Artist</h3>
-              <p class="company">APR eCommerce Limited (CrownAndPaw.com)</p>
-              <ul class="task">
-                <li>Created stylized digital artworks from client photos</li>
-                <li>
-                  Collaborated with clients to refine artworks based on feedback
-                </li>
-                <li>
-                  Maintained high production output with attention to detail
-                </li>
-              </ul>
-            </article>
-            <article class="experience-card">
-              <p class="date">August 2019 – October 2019</p>
-              <h3>Software Engineer</h3>
-              <p class="company">Miller Development Solutions</p>
-              <ul class="task">
-                <li>Developed OOP-based solutions for business requirements</li>
-                <li>Maintained clean and maintainable code</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- INFO: SKILLS -->
-      <section>
-        <div class="topics">
-          <header>
-            <p class="eyebrow">What I bring to the table</p>
-            <h2>Core Skills</h2>
-
-            <p class="details">
-              I bring a combination of creative thinking, technical design
-              skills, and practical experience from working with a wide range of
-              projects. These skills allow me to create clear, effective designs
-              while adapting to different styles, tools, and project
-              requirements.
+            <p>28 years old. Multimedia Designer from the Philippines 🇵🇭</p>
+            <p>
+              Branding, logos, and digital visuals with 5+ years of experience.
             </p>
+            <p>I turn ideas into visuals and bring designs to life.</p>
           </header>
-          <ul class="skills-list">
-            <li>Branding & Logo Design</li>
-            <li>UI/UX Design</li>
-            <li>Front-end Development</li>
-            <li>Illustration</li>
-            <li>Multimedia</li>
-            <li>Motion Graphics</li>
-            <li>Game Development</li>
-            <li>Web Development</li>
-            <li>C# Programming</li>
-            <li>Production Design</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="topics">
-          <header>
-            <p class="eyebrow">Where I've gained my knowledge</p>
-            <h2>Education</h2>
-            <p class="details">
-              My academic background helped build the foundation for my design
-              skills and creative thinking. The knowledge and training I gained
-              during this time continue to support my professional work and
-              approach to design.
-            </p>
-          </header>
-          <div class="education-card">
-            <p class="date">Academic Year 2013 - 2018</p>
-            <h3>Bachelor of Science in Computer Engineering</h3>
-            <p class="company">Asian College Dumaguete</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- INFO: PORTFOLIO -->
-      <section class="portfolio" id="portfolio">
-        <div class="topics">
-          <div>
-            <header>
-              <p class="eyebrow">What I've delivered</p>
-              <h2>Portfolio</h2>
-            </header>
-            <div class="topics">
-              <article>
-                <p>Working in progress...</p>
-              </article>
+          <div class="cta-links">
+            <a href="#" class="resume">
+              <svg
+                id="Layer_2"
+                data-name="Layer 2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 420.49 359.18"
+              >
+                <g id="Layer_2-2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1-2">
+                    <path
+                      id="Download"
+                      d="M403.11,130.62h-92.9V17.33c0-9.57-7.76-17.33-17.33-17.33H127.55c-9.57,0-17.33,7.76-17.33,17.33v113.29H17.36c-15.24,0-23.06,18.26-12.54,29.29l179.48,188.17c14.11,14.79,37.72,14.8,51.84,0l179.52-188.17c10.52-11.03,2.71-29.3-12.54-29.3h0Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              Resume
+            </a>
+            <div class="connect-links">
+              <a href="">
+                <svg
+                  id="Layer_2"
+                  data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 442.99 423.43"
+                >
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      id="Linkedin"
+                      d="M100.56,423.43V137.73H5.61v285.7h94.95ZM53.1,98.74c33.1,0,53.72-21.96,53.72-49.37C106.19,21.34,86.2,0,53.72,0,21.23,0,0,21.34,0,49.36s20.61,49.37,52.47,49.37h.63ZM153.12,423.43s1.25-258.89,0-285.7h94.97v41.43h-.63c12.49-19.5,34.98-48.14,86.2-48.14,62.49,0,109.33,40.83,109.33,128.59v163.82h-94.95v-152.84c0-38.4-13.74-64.61-48.11-64.61-26.23,0-41.86,17.67-48.72,34.75-2.51,6.08-3.12,14.62-3.12,23.16v159.55h-94.97Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  id="Layer_2"
+                  data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 656.92 407.91"
+                >
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      id="Behance"
+                      d="M594.45,66.04h-168.08V15.87h168.08v50.17ZM655.81,272.38h-211.1c0,75.68,71.7,70.88,71.7,70.88,67.71,0,65.32-43.8,65.32-43.8h71.69c0,116.3-139.4,108.33-139.4,108.33-167.29,0-156.54-155.73-156.54-155.73,0,0-.14-156.54,156.54-156.54,164.89,0,141.79,176.85,141.79,176.85ZM515.61,155.2c-62.94,0-71.69,62.79-71.69,62.79h133.83s.79-62.79-62.14-62.79ZM341.42,287.16c0,124.34-129.42,120.25-129.42,120.25H0V0h212c64.43,0,115.29,35.58,115.29,108.48s-62.17,77.51-62.17,77.51c81.94,0,76.3,101.16,76.3,101.16ZM93.41,163.33h111.24c19.22,0,36.17-6.15,36.17-48.53s-28.82-42.39-28.82-42.39h-118.59v90.92ZM254.95,282.07c0-56.51-42.95-55.95-42.95-55.95h-118.59v108.87h112.6c16.86-.36,48.94-5.27,48.94-52.92Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  id="Layer_2"
+                  data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 467 467.01"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill-rule: evenodd;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      id="Instagram"
+                      class="cls-1"
+                      d="M362.22,0H104.78C46.91,0,0,46.92,0,104.79v257.43c0,57.87,46.91,104.79,104.78,104.79h257.44c57.87,0,104.78-46.92,104.78-104.79V104.79c0-57.87-46.91-104.79-104.78-104.79ZM233.5,372.81c-76.93,0-139.3-62.37-139.3-139.3s62.37-139.3,139.3-139.3,139.3,62.36,139.3,139.3-62.37,139.3-139.3,139.3ZM415.34,92.31c0,12.6-10.21,22.81-22.81,22.81h-23.46c-12.6,0-22.81-10.21-22.81-22.81v-23.45c0-12.6,10.21-22.81,22.81-22.81h23.46c12.6,0,22.81,10.21,22.81,22.81v23.45Z"
+                    />
+                  </g>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- INFO: CONTACT -->
-      <section class="contact" id="contact">
-        <div class="topics">
-          <header>
-            <p class="eyebrow">Where to find me</p>
-            <h2>Contact</h2>
-          </header>
-          <div class="contact-info">
-            <ul class="contact-address">
+      <!-- INFO: Experiences Section -->
+      <section class="experience">
+        <header>
+          <p class="eyebrow">Where I've made an impact</p>
+          <h2>Experience</h2>
+          <p>
+            My experience is built from working on diverse projects and roles,
+            helping me understand real-world design workflows while continuously
+            growing as a designer.
+          </p>
+        </header>
+
+        <div class="experience-list">
+          <div class="experience-card">
+            <h3>Multimedia Designer</h3>
+            <p class="company">Otomait (Otomait.com)</p>
+            <ul class="task">
               <li>
-                <img src="images/Email.svg" />
-                <p class="contact-label">
-                  <span class="contact-title">Email:</span>
-                  <a
-                    class="contact-details"
-                    href="clemarkcadapan@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id="email-details"
-                    >clemarkcadapan@gmail.com</a
-                  >
-                </p>
+                Created multimedia assets such as social media graphics,
+                posters, and web visuals.
               </li>
               <li>
-                <img src="images/Mobile.svg" />
-                <p class="contact-label">
-                  <span class="contact-title">Phone:</span>
-                  <a
-                    class="contact-details"
-                    href="+639269797109"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id="phone-details"
-                    >+63 926 979 7109</a
-                  >
-                </p>
+                Designed UI/UX mockups and presentations for product and
+                marketing needs.
               </li>
               <li>
-                <img src="images/Location.svg" />
-                <p class="contact-label">
-                  <span class="contact-title">Location:</span>
-                  <a
-                    class="contact-details"
-                    href="https://maps.app.goo.gl/8y9MTUTj7C4v6njL6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Negros Oriental, Philippines
-                  </a>
-                </p>
+                Developed bespoke product and merchandise designs for branded
+                products.
               </li>
             </ul>
+            <p class="date">September 2025 — December 2025</p>
           </div>
+          <article class="experience-card">
+            <h3>In-House Logo Designer</h3>
+            <p class="company">DesignCrowd (Design.com)</p>
+            <ul class="task">
+              <li>Designed logos for startup businesses worldwide</li>
+              <li>
+                Produced scalable vector logo designs using Adobe Illustrator
+              </li>
+              <li>
+                Researched and applied design trends to maintain competitive
+                branding
+              </li>
+              <li>Delivered fast revisions while maintaining quality</li>
+            </ul>
+            <p class="date">November 2022 — June 2024</p>
+          </article>
+          <article class="experience-card">
+            <h3>Graphic Artist</h3>
+            <p class="company">APR eCommerce Limited (CrownAndPaw.com)</p>
+            <ul class="task">
+              <li>Created stylized digital artworks from client photos</li>
+              <li>
+                Collaborated with clients to refine artworks based on feedback
+              </li>
+              <li>
+                Maintained high production output with attention to detail
+              </li>
+            </ul>
+            <p class="date">April 2019 — October 2022</p>
+          </article>
+          <article class="experience-card">
+            <h3>Software Engineer</h3>
+            <p class="company">Miller Development Solutions</p>
+            <ul class="task">
+              <li>Developed OOP-based solutions for business requirements</li>
+              <li>Maintained clean and maintainable code</li>
+            </ul>
+            <p class="date">August 2019 — October 2019</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- INFO: Skills Section -->
+      <section>
+        <header>
+          <p class="eyebrow">What I bring to the table</p>
+          <h2>Core Skills</h2>
+
+          <p>
+            I bring a combination of creative thinking, technical design skills,
+            and practical experience from working with a wide range of projects.
+            These skills allow me to create clear, effective designs while
+            adapting to different styles, tools, and project requirements.
+          </p>
+        </header>
+        <ul class="skills-list">
+          <li>Branding & Logo Design</li>
+          <li>UI/UX Design</li>
+          <li>Front-end Development</li>
+          <li>Illustration</li>
+          <li>Multimedia</li>
+          <li>Motion Graphics</li>
+          <li>Game Development</li>
+          <li>Web Development</li>
+          <li>C# Programming</li>
+          <li>Production Design</li>
+        </ul>
+      </section>
+
+      <!-- INFO: Education Section -->
+      <section>
+        <header>
+          <p class="eyebrow">Where I've gained my knowledge</p>
+          <h2>Education</h2>
+          <p>
+            My academic background helped build the foundation for my design
+            skills and creative thinking. The knowledge and training I gained
+            during this time continue to support my professional work and
+            approach to design.
+          </p>
+        </header>
+        <div class="education-card">
+          <h3>Bachelor of Science in Computer Engineering</h3>
+          <p class="company">Asian College Dumaguete</p>
+
+          <ul class="task">
+            <li>
+              Graduated Cum Laude with consistent academic excellence in all
+              semester
+            </li>
+            <li>
+              Served as College Department President and active member of the
+              student government
+            </li>
+            <li>
+              Led and contributed to seminars and events focused on game
+              development
+            </li>
+          </ul>
+          <p class="date">Academic Year 2013 - 2018</p>
         </div>
       </section>
     </main>
-
-    <!-- INFO: FOOTER -->
     <footer>
-      <p>© 2026 Clemark Cadapan. All rights reserved.</p>
+      <!-- INFO: Contact Section -->
+      <section class="contact" id="contact">
+        <div>
+          <header>
+            <p class="eyebrow">Where to find me</p>
+            <h2>Contact</h2>
+            <p>Have a project in mind? Let's talk.</p>
+          </header>
+          <div class="contact-info">
+            <p>For commission inquiry, email me at</p>
+            <a href="mailto:clemarkcadapan@gmail.com" class="contact-email">
+              clemarkcadapan@gmail.com
+            </a>
+            <p>or send me a message via this form. →</p>
+          </div>
+        </div>
+        <form action="">
+          <label for="name" class="form-label">
+            Name:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Spongebob"
+              class="form-input"
+              required
+            />
+          </label>
+          <label for="email" class="form-label">
+            Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="spongepants@gmail.com"
+              class="form-input"
+              required
+            />
+          </label>
+          <label for="message" class="form-label">
+            Message:
+            <textarea
+              name="message"
+              id="message"
+              cols="10"
+              rows="4"
+              placeholder="Message..."
+              class="form-input"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="contact-submit">
+            <svg
+              id="Layer_2"
+              data-name="Layer 2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 360.68 360.68"
+            >
+              <g id="Layer_2-2" data-name="Layer 2">
+                <path
+                  d="M325.75,1.31L20.09,98.85c-26.9,8.58-26.74,46.7.23,55.06l142.32,44.14,44.14,142.32c8.36,26.97,46.48,27.12,55.06.23L359.37,34.93c6.61-20.7-12.92-40.23-33.62-33.62Z"
+                />
+              </g>
+            </svg>
+            Send
+          </button>
+        </form>
+      </section>
+
+      <section class="footer">
+        <p class="copyright">
+          <span>© 2026 Clemark Cadapan. </span><span>All rights reserved.</span>
+        </p>
+        <div class="connect-links">
+          <a href="">
+            <svg
+              id="Layer_2"
+              data-name="Layer 2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 442.99 423.43"
+            >
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  id="Linkedin"
+                  d="M100.56,423.43V137.73H5.61v285.7h94.95ZM53.1,98.74c33.1,0,53.72-21.96,53.72-49.37C106.19,21.34,86.2,0,53.72,0,21.23,0,0,21.34,0,49.36s20.61,49.37,52.47,49.37h.63ZM153.12,423.43s1.25-258.89,0-285.7h94.97v41.43h-.63c12.49-19.5,34.98-48.14,86.2-48.14,62.49,0,109.33,40.83,109.33,128.59v163.82h-94.95v-152.84c0-38.4-13.74-64.61-48.11-64.61-26.23,0-41.86,17.67-48.72,34.75-2.51,6.08-3.12,14.62-3.12,23.16v159.55h-94.97Z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              id="Layer_2"
+              data-name="Layer 2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 656.92 407.91"
+            >
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  id="Behance"
+                  d="M594.45,66.04h-168.08V15.87h168.08v50.17ZM655.81,272.38h-211.1c0,75.68,71.7,70.88,71.7,70.88,67.71,0,65.32-43.8,65.32-43.8h71.69c0,116.3-139.4,108.33-139.4,108.33-167.29,0-156.54-155.73-156.54-155.73,0,0-.14-156.54,156.54-156.54,164.89,0,141.79,176.85,141.79,176.85ZM515.61,155.2c-62.94,0-71.69,62.79-71.69,62.79h133.83s.79-62.79-62.14-62.79ZM341.42,287.16c0,124.34-129.42,120.25-129.42,120.25H0V0h212c64.43,0,115.29,35.58,115.29,108.48s-62.17,77.51-62.17,77.51c81.94,0,76.3,101.16,76.3,101.16ZM93.41,163.33h111.24c19.22,0,36.17-6.15,36.17-48.53s-28.82-42.39-28.82-42.39h-118.59v90.92ZM254.95,282.07c0-56.51-42.95-55.95-42.95-55.95h-118.59v108.87h112.6c16.86-.36,48.94-5.27,48.94-52.92Z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              id="Layer_2"
+              data-name="Layer 2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 467 467.01"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  id="Instagram"
+                  class="cls-1"
+                  d="M362.22,0H104.78C46.91,0,0,46.92,0,104.79v257.43c0,57.87,46.91,104.79,104.78,104.79h257.44c57.87,0,104.78-46.92,104.78-104.79V104.79c0-57.87-46.91-104.79-104.78-104.79ZM233.5,372.81c-76.93,0-139.3-62.37-139.3-139.3s62.37-139.3,139.3-139.3,139.3,62.36,139.3,139.3-62.37,139.3-139.3,139.3ZM415.34,92.31c0,12.6-10.21,22.81-22.81,22.81h-23.46c-12.6,0-22.81-10.21-22.81-22.81v-23.45c0-12.6,10.21-22.81,22.81-22.81h23.46c12.6,0,22.81,10.21,22.81,22.81v23.45Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

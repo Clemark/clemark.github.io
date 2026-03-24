@@ -420,7 +420,7 @@ h2 {
 
 .experience-card {
   width: clamp(12rem, 70dvw, 32rem);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 20px;
   border: 1px solid var(---clr-card-accent);
   display: grid;
@@ -494,7 +494,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1.5rem;
   gap: 1rem;
 }
 

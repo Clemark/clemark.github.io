@@ -71,7 +71,6 @@ textarea {
   ---clr-contact-bg: #242424;
   ---clr-contact-accent: #dba100;
   ---clr-footer-text: #ffefc4;
-  ---fntweight-normal: 400;
 }
 
 .lightmode {
@@ -96,7 +95,6 @@ textarea {
   ---clr-contact-accent: #dba100;
   ---clr-footer-text: #16181a;
 
-  ---fntweight-normal: 600;
   transition: 0.5s ease;
 }
 
@@ -104,7 +102,7 @@ body {
   background: var(---clr-background);
   font-family: "Sofia Sans", sans-serif;
   font-style: normal;
-  font-weight: var(---fntweight-normal);
+  font-weight: 500;
   color: var(---clr-text-main);
 }
 
@@ -397,7 +395,6 @@ h2 {
   right: 0;
   color: var(---clr-text-details);
   font-size: 0.85rem;
-  font-weight: 800;
 }
 
 .experience-list::-webkit-scrollbar {

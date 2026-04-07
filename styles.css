@@ -394,15 +394,31 @@ h2 {
 
   scrollbar-color: var(---clr-card-accent) var(---clr-card-scroll);
 }
+/* 
+.experience-list::after {
+  --fade-left-start: 0%;
+  --fade-left-end: 0%;
+  --fade-right-start: 90%;
+  --fade-right-end: 100%;
 
-.experience-list:last-child::before {
-  content: "SCROLL FOR MORE \27F6";
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: var(---clr-text-details);
-  font-size: 0.85rem;
-}
+  mask-image: linear-gradient(
+    to right,
+    transparent var(--fade-left-start),
+    #000 var(--fade-left-end),
+    #000 var(--fade-right-start),
+    transparent var(--fade-right-end)
+  );
+
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  transition:
+    --fade-left-start 0.15s ease-out,
+    --fade-left-end 0.15s ease-out,
+    --fade-right-start 0.15s ease-out,
+    --fade-right-end 0.15s ease-out;
+} */
 
 .experience-list::-webkit-scrollbar {
   height: 0.75rem;

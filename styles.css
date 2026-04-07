@@ -18,6 +18,12 @@ svg {
   width: auto;
 }
 
+/* List Reset */
+ul,
+li {
+  list-style: none;
+}
+
 /* Anchor Links Reset */
 a {
   color: inherit;
@@ -51,6 +57,9 @@ textarea {
 }
 
 :root {
+  ---clr-darkbg: #16181a;
+  ---clr-lightbg: #fef6ff;
+
   color-scheme: light dark;
 
   /* Color Variables for Dark Mode*/
@@ -100,8 +109,7 @@ textarea {
 
   ---clr-skill-list: #16181a;
   ---clr-skill-bg: #e093ff;
-
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 body {
@@ -669,6 +677,10 @@ form {
     padding-left: 0;
     border-left: none;
   }
+
+  .logos-set {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 300px) {
@@ -715,4 +727,35 @@ form {
   .hidden {
     transition: none;
   }
+}
+
+/* INFO: Portfolio Section */
+.logos-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+
+  gap: 1rem;
+  justify-items: center;
+
+  margin-top: 2rem;
+}
+
+.logos-set li {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.white {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: var(---clr-lightbg);
+}
+
+.black {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: var(---clr-darkbg);
 }
